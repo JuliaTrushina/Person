@@ -1,0 +1,11 @@
+class Person:
+ 
+    def __init__(self):
+      self.name= input()
+      self.age= int(input())
+      self.grade= float(input())
+    def print_info(self):
+        print(f"Name:{self.name }, Age:{self.age}, Grade:{self.grade}")
+print("Введите имя, не больше 25 букв")    
+p=Person()
+p.print_info()
