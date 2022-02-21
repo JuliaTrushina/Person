@@ -1,0 +1,22 @@
+class Employee:
+ 
+    def __init__(self, name, place,position,experience,gender,age,salary):
+        self.__name = name    
+        self.__place = place
+        self.__position=position
+        self.__experience=experience
+        self.__gender=gender
+        self.__age=age
+        self.__salary=salary
+    def print_info(self,n):
+        for i in range(n):
+            print(f"Name: {self.__name},Place: {self.__place} , Position: {self.__position},Experience:{self.__experience}, Gender:{self.__gender}, Age:{self.__age}, Salary:{self.__salary} ")
+ 
+p1 = Employee(' Tom'," ВТБ",' Бизнес-аналитик',' 3 года',' мужской',' 27',' 150.000 рублей')
+p2= Employee(" Bill"," MTC",' продавец-консультант',' 2 месяца',' мужской',' 18',' 17.000 рублей')
+p3= Employee(" Kirill"," Пятёрочка",' продавец-кассир', ' 15 лет', ' мужской', ' 33', ' 40.000 рублей') 
+
+
+p1.print_info(1)
+p2.print_info(1)
+p3.print_info(1)
